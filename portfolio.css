@@ -1,0 +1,31 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+.top-container {
+  display: flex;
+  margin: 1em 2em;
+
+}
+.about-me-container {
+  padding: 1em;
+  box-shadow: 4px 3px 12px -5px rgba(128, 128, 128, 0.85);
+  max-width: 50%;
+}
+.about-me-container>h1 {
+  font-size: 1.6rem;
+}
+.about-me-content {
+  font-size: 1rem;
+}
+.link-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.link-icon {
+  max-width: 1.5em;
+}
+.about-me-img {
+  object-fit: contain;
+}
