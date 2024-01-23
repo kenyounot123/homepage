@@ -26,6 +26,7 @@ body::after {
   align-items: center;
   justify-content: center;
   padding: 2em;
+  margin-top: 30px;
 }
 .about-me-container {
   box-shadow: 4px 3px 12px -5px rgba(128, 128, 128, 0.85);
@@ -124,12 +125,22 @@ svg {
   width: 1.5em;
   justify-self: end;
 }
+@media (max-width: 1000px) {
+  .pic-container {
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  .pic-name-overlay {
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+}
 @media (max-width: 650px) {
   .top-container {
     flex-direction: column;
   }
   .about-me-container {
-    box-shadow: none;
     text-align: center;
   }
   .link-icon-container {
@@ -138,17 +149,17 @@ svg {
     align-self: start;
   }
   .pic-container {
-    padding-right: 0;
+    padding-right: none;
+    margin-top: initial;
+    margin-left: initial;
   }
-  
+  .pic-name-overlay {
+    top: initial;
+    right: initial;
+    transform: none;
+  }
 
   .work-section-title {
     text-align: center;
-  }
-}
-
-@media (max-width: 1000px) {
-  .pic-container {
-    margin-top: -50px;
   }
 }
