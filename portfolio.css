@@ -142,10 +142,6 @@ svg {
   gap: 1rem;
 }
 
-.footer-img {
-  width: 100%;
-  max-width: 400px;
-}
 @media (max-width: 950px) {
   .pic-container {
     margin-top: -50px;
@@ -187,9 +183,7 @@ svg {
     display: flex;
     text-align: center;
     flex-direction: column;
-  }
-  .contact-me-content {
-    align-self: center;
+    align-items: center;
   }
   .bottom-icon-container {
     justify-content: center;

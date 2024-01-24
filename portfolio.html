@@ -97,9 +97,17 @@
           <img class="link-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" />
         </div>
       </div>
-      <div class="contact-me-img-container">
-        <img class="footer-img" src="images/contact-me-image.jpg" alt="straw hat crew">
-      </div>
+      <picture class="footer-img">
+        <source
+            media="(max-width: 1200px)"
+            srcset="
+              https://placeholder.pics/svg/335x469         335w,
+              https://placeholder.pics/svg/310x434 310w
+            "
+            sizes="(max-width: 680px) 310px, 335px"
+        />
+        <img src="https://placeholder.pics/svg/600x472" alt="" />
+      </picture>
     </footer>
   </body>
 </html>
