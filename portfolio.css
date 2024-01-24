@@ -36,7 +36,7 @@ body::after {
 
 }
 
-.about-me-container>h1 {
+.about-me-title {
   font-size: 2rem;
   margin: 0;
   padding-top: 1.5rem;
@@ -125,7 +125,28 @@ svg {
   width: 1.5em;
   justify-self: end;
 }
-@media (max-width: 1000px) {
+.bottom-icon-container {
+  display: flex;
+  gap: 1rem;
+}
+.contact-me-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background: var(--main-color);
+}
+.contact-me-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-img {
+  width: 100%;
+  max-width: 400px;
+}
+@media (max-width: 950px) {
   .pic-container {
     margin-top: -50px;
     margin-left: -50px;
@@ -149,7 +170,7 @@ svg {
     align-self: start;
   }
   .pic-container {
-    padding-right: none;
+    padding-right: 0;
     margin-top: initial;
     margin-left: initial;
   }
@@ -161,5 +182,16 @@ svg {
 
   .work-section-title {
     text-align: center;
+  }
+  .contact-me-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact-me-content {
+    align-self: center;
+  }
+  .bottom-icon-container {
+    justify-content: center;
   }
 }
